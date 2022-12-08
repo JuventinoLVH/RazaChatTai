@@ -2,25 +2,33 @@ version: "3.1"
 
 intents:
   - saludo
-  - despedida
-  - afirmacion
-  - denegar
+  - adios
   - mood_feliz
   - mood_triste
-  - bot_reto
+  - afirmacion
+  - denegar
+  - pedidoAyuda
+
+actions:
+  - action_recomendar
+
 
 responses:
+  utter_Explicacion:
+  - text: "Soy un bot para recomendar, pero primero me tienes que saludar"
+
   utter_saludo:
   - text: "Hola, como puedo ayudarte?"
 
   utter_eso_ayudo?:
   - text: "Necesitas alguna otra cosa?"
-
+    
   utter_adios:
   - text: "Bye"
+    image: "https://www.pngkit.com/png/full/16-162327_ok-oki-emotions-ftstickers-emoji-emojistickers-yelowfac-smiley.png"
 
   utter_soyrobor:
-  - text: "Soy un robot marca rasa, no te asustes."
+  - text: "Soy un robot marca RASA, no te asustes."
 
 session_config:
   session_expiration_time: 60

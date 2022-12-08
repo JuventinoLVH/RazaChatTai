@@ -1,0 +1,6 @@
+[
+  {
+    "name": "ayuda",
+    "pattern": "\\bayuda\\b"
+  }
+]

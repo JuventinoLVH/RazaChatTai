@@ -1,6 +1,19 @@
 version: "3.1"
 
+
 nlu:
+- regex: ayuda
+  examples: |
+    - \bayuda\b
+    
+- intent: pedidoAyuda
+  examples: |
+    - [hola me puedes ayudar](ayuda)
+    - [ayuda Estoy perdido](ayuda) 
+    - Que puedes hacer? 
+    - Para que es esto?
+    - muestrame que puedes hacer
+
 - intent: saludo
   examples: |
     - hey
@@ -25,7 +38,6 @@ nlu:
     - Ten un buen dia
     - Al rato
     - bye bye
-
 
 - intent: afirmacion
   examples: |
@@ -80,10 +92,3 @@ nlu:
     - pocos animos
     - con ganas de dormir
     - me voy a dormir 
-
-- intent: bot_reto
-  examples: |
-    - Eres un robot
-    - Eres humano?
-    - Estoy hablando con un robot?
-    - Estoy hablando con un humano?

@@ -2,9 +2,16 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: happy_path
   steps:
   - intent: saludo
   - action: utter_saludo
   - intent: mood_feliz
-  - action: utter_soyrobor
+  - action: utter_adios
+
+- story: recomendacion
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: mood_triste
+  - action: action_recomendar 
