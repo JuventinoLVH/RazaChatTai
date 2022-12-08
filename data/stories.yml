@@ -4,7 +4,7 @@ stories:
 
 - story: happy path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: saludo
+  - action: utter_saludo
+  - intent: mood_feliz
+  - action: utter_soyrobor
