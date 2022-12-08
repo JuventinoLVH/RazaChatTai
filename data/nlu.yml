@@ -5,7 +5,8 @@ nlu:
 - regex: ayuda
   examples: |
     - \bayuda\b
-    
+
+  
 - intent: pedidoAyuda
   examples: |
     - [hola me puedes ayudar](ayuda)
@@ -13,6 +14,14 @@ nlu:
     - Que puedes hacer? 
     - Para que es esto?
     - muestrame que puedes hacer
+
+- intent: random
+  examples: |
+    - random
+
+- intent: especificar
+  examples: |
+    - especificar
 
 - intent: saludo
   examples: |
@@ -45,11 +54,13 @@ nlu:
     - s
     - en efecto
     - por supuesto
-    - suena bien
+    - Mucho
     - claro
     - correcto
+    - muy correcto
+    - muchas gracias
 
-- intent: denegar
+- intent: negacion
   examples: |
     - no
     - n
@@ -58,37 +69,14 @@ nlu:
     - no lo creo
     - de ninguna manera
     - no realmente
+    - muy poco
+    -La neta no
 
-- intent: mood_feliz
+- intent: peticion
   examples: |
-    - perfecto
-    - genial
-    - bien
-    - Me siento bien
-    - maravilloso
-    - Me siento muy bien 
-    - Estoy bien
-    - Soy azombtoso
-    - Quiero salvar el mundo
-    - Super
-    - Asombroso
-    - Muy muy bien
-    - Fresco como lechuga
-
-- intent: mood_triste
-  examples: |
-    - tengo un mal dia
-    - mal dia
-    - Estoy triste
-    - No me siento muy bien
-    - Estoy desepcionado
-    - Super triste
-    - Estoy muy muy triste
-    - triste
-    - tristemil
-    - infeliz
-    - para nada bien
-    - dormi poco
-    - pocos animos
-    - con ganas de dormir
-    - me voy a dormir 
+    - Me puedes dar una recomendacion?
+    - Me ayudas con la comida?
+    - Quiero una receta
+    - No se que cocinar, ayuda!
+    - Quiero codinar pero no se que
+    - Tengo ingredientes, pero no se que cocinar

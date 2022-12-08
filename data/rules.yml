@@ -7,3 +7,15 @@ rules:
   - intent: pedidoAyuda
   - action: utter_Explicacion
 
+- rule: Opcion especificar (2)
+  steps: 
+  - intent: especificar
+  - action: action_recomendar
+  - action: utter_DespedidaMal
+
+- rule: Opcion random (1)
+  steps: 
+  - intent: random
+  - action: action_recomendar
+  - action: utter_DespedidaBien
+

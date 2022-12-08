@@ -1,12 +1,17 @@
 version: "3.1"
+slots:
+  opcion:
+    type: int
+    influence_conversation: false
 
 intents:
   - saludo
   - adios
-  - mood_feliz
-  - mood_triste
+  - peticion
+  - negacion
   - afirmacion
-  - denegar
+  - random
+  - especificar
   - pedidoAyuda
 
 actions:
@@ -17,18 +22,40 @@ responses:
   utter_Explicacion:
   - text: "Soy un bot para recomendar, pero primero me tienes que saludar"
 
-  utter_saludo:
-  - text: "Hola, como puedo ayudarte?"
-
-  utter_eso_ayudo?:
-  - text: "Necesitas alguna otra cosa?"
+  utter_SaludoOp:
+  - text: "Hola muy buenas, que quieres hoy?"
+    buttons:
+    - title: "Receta random"
+      payload: 'random'
+    - title: "Especificar ingredientes(En ingles)"
+      payload: 'especificar'
+  - text: "Hola, que receta necesitas?"
+    buttons:
+    - title: "Receta random"
+      payload: 'random'
+    - title: "Especificar ingredientes(En ingles)"
+      payload: 'especificar'
+  - text: "Un gusto verte, que receta necesitas?"
+    buttons:
+    - title: "Receta random"
+      payload: 'random'
+    - title: "Especificar ingredientes(En ingles)"
+      payload: 'especificar'
     
-  utter_adios:
-  - text: "Bye"
-    image: "https://www.pngkit.com/png/full/16-162327_ok-oki-emotions-ftstickers-emoji-emojistickers-yelowfac-smiley.png"
+  
 
-  utter_soyrobor:
-  - text: "Soy un robot marca RASA, no te asustes."
+  utter_pedirRetro:
+  - text: "Que te parecio la receta?"
+    
+  utter_DespedidaBien:
+  - text: "Hasta luego"
+  - text: "Nos vemos"
+  - text: "Adios!!"
+    image: "https://th.bing.com/th/id/OIP.m7sWwqCoeZs2PbPTtwWIVAHaHa?pid=ImgDet&rs=1"
+
+  utter_DespedidaMal:
+  - text: "A bueno, adios."
+  
 
 session_config:
   session_expiration_time: 60
